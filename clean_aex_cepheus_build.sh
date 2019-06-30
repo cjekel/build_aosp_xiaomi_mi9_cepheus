@@ -22,4 +22,4 @@ make -j10 ARCH=arm clean
 # fire up the building process and also log stdout
 # and stderrout
 lunch aosp_cepheus-userdebug 2>&1 | tee lunch.log && \
-make aex -j10 2>&1 | tee make.log 
+make -j10 2>&1 | tee make.log 
