@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device trees -->
+  <project name="cjekel/device_xiaomi_cepheus" path="device/xiaomi/cepheus" remote="github" revision="lineage-16.0"/>
+  
+  <!-- kernel -->
+  <project name="markakash/kernel_xiaomi_sm8150" path="kernel/xiaomi/sm8150" remote="github" revision="pie"/>
+
+  <!-- vendor / blobs -->
+  <project name="markakash/vendor_xiaomi_cepheus" path="vendor/xiaomi/cepheus" remote="github" revision="pie"/>
+
+</manifest>
