@@ -20,16 +20,45 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     mkdir .repo/local_manifests
     curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/my_manifest.xml > .repo/local_manifests/my_manifest.xml
     ```
-
+0. Sync the sources
+    ```bash
+    repo sync -j10
+    ```
+0. Grab the build script and edit if needed
+    ```bash
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_lineage_cepheus_build.sh
+    chmod +x clean_lineage_cepheus_build.sh
+    ```
+0. Run the build script
+    ```bash
+    ./clean_lineage_cepheus_build.sh
+    ```
+    
 ## AospExtended
 
-# build_lineage_xiaomi_mi9
+0. Set up repo to grab the AospExtended source
+    ```bash
+    mkdir AospExtended
+    cd AospExtended
+    repo init -u git://github.com/AospExtended/manifest.git -b 9.x
+    ```
+0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo
+    ```bash
+    mkdir .repo/local_manifests
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/aex_manifest.xml > .repo/local_manifests/aex_manifest.xml
+    ```
+0. Sync the sources
+    ```bash
+    repo sync -j10
+    ```
+0. Grab the build script and edit if needed
+    ```bash
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_aex_cepheus_build.sh
+    chmod +x clean_aex_cepheus_build.sh
+    ```
+0. Run the build script
+    ```bash
+    ./clean_aex_cepheus_build.sh
+    ```
 
-How to set up a lineage build enviorment.
 
-0. Set up your build enviorment according to Google https://source.android.com/setup/build/initializing
-0. Install repo according to https://source.android.com/setup/build/downloading#installing-repo
-0. Follow a similar procedure to https://github.com/lineage-x2-devs/local_manifests but use device tree for cepheus instead...
-0. Modify .repo/manifests/snippets/lineage.xml to change this line:``` <project path="hardware/qcom/media-caf/sm8150" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8150" />```
-to:
-``` <project path="hardware/qcom/media-caf/sm8150" name="randomblame/media-caf_sm8150" revision="cepheus" />```
