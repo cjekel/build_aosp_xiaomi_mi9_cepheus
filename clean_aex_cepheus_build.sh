@@ -19,7 +19,6 @@ source build/envsetup.sh
 # a dirty build
 make -j10 ARCH=arm clean
 
-# fire up the building process and also log stdout
-# and stderrout
+# fire up the building process
 lunch aosp_cepheus-userdebug
 make aex -j10 
