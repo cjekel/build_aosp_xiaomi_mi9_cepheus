@@ -26,7 +26,7 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     ```
 0. Grab the build script and edit if needed
     ```bash
-    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_lineage_cepheus_build.sh
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_lineage_cepheus_build.sh > clean_lineage_cepheus_build.sh
     chmod +x clean_lineage_cepheus_build.sh
     ```
 0. Run the build script
@@ -53,7 +53,7 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     ```
 0. Grab the build script and edit if needed
     ```bash
-    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_aex_cepheus_build.sh
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/clean_aex_cepheus_build.sh > clean_aex_cepheus_build.sh
     chmod +x clean_aex_cepheus_build.sh
     ```
 0. Run the build script
