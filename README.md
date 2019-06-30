@@ -10,16 +10,16 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
 ## Lineage isntructions
 
 0. Set up repo to grab the lineage source
-```bash
-mkdir lineage
-cd lineage
-repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
-```
+    ```bash
+    mkdir lineage
+    cd lineage
+    repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
+    ```
 0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo
-```bash
-mkdir .repo/local_manifests
-curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/my_manifest.xml > .repo/local_manifests/my_manifest.xml
-```
+    ```bash
+    mkdir .repo/local_manifests
+    curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/my_manifest.xml > .repo/local_manifests/my_manifest.xml
+    ```
 
 ## AospExtended
 
