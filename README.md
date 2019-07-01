@@ -17,7 +17,7 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     cd lineage
     repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
     ```
-0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo, edit the my_manifest.xml file with your sources
+0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo, and (optionally) edit the my_manifest.xml file with your sources
     ```bash
     mkdir .repo/local_manifests
     curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/my_manifest.xml > .repo/local_manifests/my_manifest.xml
@@ -44,7 +44,7 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     cd AospExtended
     repo init -u git://github.com/AospExtended/manifest.git -b 9.x
     ```
-0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo, edit the aex_manifest.xml file with your sources
+0. Setup the Xiaomi Mi9 (cepheus) dependencies with repo, and (optionally) edit the aex_manifest.xml file with your sources
     ```bash
     mkdir .repo/local_manifests
     curl https://raw.githubusercontent.com/cjekel/build_aosp_xiaomi_mi9_cepheus/master/aex_manifest.xml > .repo/local_manifests/aex_manifest.xml
