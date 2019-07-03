@@ -4,12 +4,12 @@ These instructions were inspired by https://github.com/lineage-x2-devs/local_man
 
 The sources here are from github user markakash, who has put in a ton of work on the Mi 9!
 
-In both cases you need to set up your AOSP build enviorment. I'm currently using a docker contianer with ubuntu 16.04, as I was having issues with my main linux installation.
+In both cases you need to set up your AOSP build environment. I'm currently using a docker container with ubuntu 16.04, as I was having issues with my main linux installation.
 
-0. Set up your build enviorment according to Google https://source.android.com/setup/build/initializing
+0. Set up your build environment according to Google https://source.android.com/setup/build/initializing
 0. Install repo according to https://source.android.com/setup/build/downloading#installing-repo
 
-## Lineage isntructions
+## Lineage instructions
 
 0. Set up repo to grab the lineage source
     ```bash
@@ -36,7 +36,7 @@ In both cases you need to set up your AOSP build enviorment. I'm currently using
     ./clean_lineage_cepheus_build.sh
     ```
     
-## AospExtended
+## AospExtended instructions
 
 0. Set up repo to grab the AospExtended source
     ```bash
