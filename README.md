@@ -1,3 +1,6 @@
+# Not maintained
+These instructions are not being maintained. I'm not grabbing the correct repos. I may update when there is an official lineage. You can try grabbing the official PE repos and performing a build.
+
 # Build Lineage and AospExtended (AEX) for Xiaomi Mi9 cepheus
 
 These instructions were inspired by https://github.com/lineage-x2-devs/local_manifests
