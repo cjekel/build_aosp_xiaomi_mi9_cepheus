@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device trees -->
+  <project name="cjekel/device_xiaomi_cepheus-1" path="device/xiaomi/cepheus" remote="github" revision="arrow-10.0"/>
+  <project name="cjekel/device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="github" revision="ten"/>
+
+  <!-- kernel -->
+  <!-- <project name="cjekel/kernel_xiaomi_sm8150" path="kernel/xiaomi/sm8150" remote="github" revision="quartz"/> -->
+  <project name="Demon000/kernel_xiaomi_sm8150" path="kernel/xiaomi/sm8150" remote="github" revision="lineage-17.1"/>
+
+  <!-- vendor / blobs -->
+  <project name="cjekel/vendor_xiaomi_cepheus" path="vendor/xiaomi/cepheus" remote="github" revision="ten"/>
+
+  <!-- proprietary vendor / blobs -->
+  <project name="cjekel/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="quartz"/>
+
+  <!-- qcom -->
+  <project name="PixelExperience/hardware_qcom_audio-caf_sm8150" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="pie-caf"/>
+  <project name="PixelExperience/hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="ten"/>
+
+
+  <!-- lineage settings -->
+  <!-- <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/> -->
+
+</manifest>
